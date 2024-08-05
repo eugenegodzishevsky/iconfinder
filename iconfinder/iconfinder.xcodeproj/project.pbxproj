@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		DA82F5672C5A101D0090F159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5662C5A101D0090F159 /* AppDelegate.swift */; };
 		DA82F5692C5A101D0090F159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5682C5A101D0090F159 /* SceneDelegate.swift */; };
-		DA82F56B2C5A101D0090F159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F56A2C5A101D0090F159 /* ViewController.swift */; };
 		DA82F5712C5A101D0090F159 /* iconfinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA82F56F2C5A101D0090F159 /* iconfinder.xcdatamodeld */; };
 		DA82F5732C5A101E0090F159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA82F5722C5A101E0090F159 /* Assets.xcassets */; };
 		DA82F5762C5A101E0090F159 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DA82F5752C5A101E0090F159 /* Base */; };
-		DA82F5812C5A101F0090F159 /* iconfinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5802C5A101F0090F159 /* iconfinderTests.swift */; };
+		DA82F5812C5A101F0090F159 /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5802C5A101F0090F159 /* MainPresenterTests.swift */; };
 		DA82F58B2C5A101F0090F159 /* iconfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F58A2C5A101F0090F159 /* iconfinderUITests.swift */; };
-		DA82F58D2C5A101F0090F159 /* iconfinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F58C2C5A101F0090F159 /* iconfinderUITestsLaunchTests.swift */; };
+		DA82F5BA2C5CB2070090F159 /* IconSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5B92C5CB2070090F159 /* IconSearchService.swift */; };
+		DA82F5BC2C5CB2320090F159 /* IconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5BB2C5CB2320090F159 /* IconModel.swift */; };
+		DA82F5BE2C5CB2520090F159 /* IconCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5BD2C5CB2520090F159 /* IconCacheManager.swift */; };
+		DA82F5C12C5CB2950090F159 /* GalleryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5C02C5CB2950090F159 /* GalleryManager.swift */; };
+		DA82F5C32C5CB2A60090F159 /* AlertAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5C22C5CB2A60090F159 /* AlertAccessViewController.swift */; };
+		DA82F5C52C5CB2B80090F159 /* AlertSaveSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5C42C5CB2B80090F159 /* AlertSaveSuccessViewController.swift */; };
+		DA82F5C82C5CB2FE0090F159 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5C72C5CB2FE0090F159 /* MainView.swift */; };
+		DA82F5CA2C5CB3090090F159 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5C92C5CB3090090F159 /* MainPresenterProtocol.swift */; };
+		DA82F5CE2C5CB3FD0090F159 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5CD2C5CB3FD0090F159 /* SearchViewController.swift */; };
+		DA82F5DA2C608DAD0090F159 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5D92C608DAD0090F159 /* Builder.swift */; };
+		DA82F5DC2C608E220090F159 /* ImageLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5DB2C608E220090F159 /* ImageLoaderManager.swift */; };
+		DA82F5E42C608EFB0090F159 /* DataStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5E32C608EFB0090F159 /* DataStoreService.swift */; };
+		DA82F5E72C608FD20090F159 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5E62C608FD20090F159 /* SecondView.swift */; };
+		DA82F5E92C608FE80090F159 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5E82C608FE80090F159 /* SecondViewController.swift */; };
+		DA82F5EB2C60900D0090F159 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5EA2C60900D0090F159 /* SecondPresenter.swift */; };
+		DA82F5ED2C60908E0090F159 /* SecondPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5EC2C60908E0090F159 /* SecondPresenterTests.swift */; };
+		DA82F5EF2C6091120090F159 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82F5EE2C6091120090F159 /* ImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +54,31 @@
 		DA82F5632C5A101D0090F159 /* iconfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iconfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82F5662C5A101D0090F159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA82F5682C5A101D0090F159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA82F56A2C5A101D0090F159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA82F5702C5A101D0090F159 /* iconfinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iconfinder.xcdatamodel; sourceTree = "<group>"; };
 		DA82F5722C5A101E0090F159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA82F5752C5A101E0090F159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA82F5772C5A101E0090F159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA82F57C2C5A101F0090F159 /* iconfinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iconfinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA82F5802C5A101F0090F159 /* iconfinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconfinderTests.swift; sourceTree = "<group>"; };
+		DA82F5802C5A101F0090F159 /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
 		DA82F5862C5A101F0090F159 /* iconfinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iconfinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82F58A2C5A101F0090F159 /* iconfinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconfinderUITests.swift; sourceTree = "<group>"; };
-		DA82F58C2C5A101F0090F159 /* iconfinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconfinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA82F5B92C5CB2070090F159 /* IconSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSearchService.swift; sourceTree = "<group>"; };
+		DA82F5BB2C5CB2320090F159 /* IconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconModel.swift; sourceTree = "<group>"; };
+		DA82F5BD2C5CB2520090F159 /* IconCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCacheManager.swift; sourceTree = "<group>"; };
+		DA82F5C02C5CB2950090F159 /* GalleryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryManager.swift; sourceTree = "<group>"; };
+		DA82F5C22C5CB2A60090F159 /* AlertAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAccessViewController.swift; sourceTree = "<group>"; };
+		DA82F5C42C5CB2B80090F159 /* AlertSaveSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSaveSuccessViewController.swift; sourceTree = "<group>"; };
+		DA82F5C72C5CB2FE0090F159 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DA82F5C92C5CB3090090F159 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
+		DA82F5CD2C5CB3FD0090F159 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DA82F5D92C608DAD0090F159 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		DA82F5DB2C608E220090F159 /* ImageLoaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderManager.swift; sourceTree = "<group>"; };
+		DA82F5E32C608EFB0090F159 /* DataStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreService.swift; sourceTree = "<group>"; };
+		DA82F5E62C608FD20090F159 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		DA82F5E82C608FE80090F159 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DA82F5EA2C60900D0090F159 /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		DA82F5EC2C60908E0090F159 /* SecondPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenterTests.swift; sourceTree = "<group>"; };
+		DA82F5EE2C6091120090F159 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +131,14 @@
 			children = (
 				DA82F5662C5A101D0090F159 /* AppDelegate.swift */,
 				DA82F5682C5A101D0090F159 /* SceneDelegate.swift */,
-				DA82F56A2C5A101D0090F159 /* ViewController.swift */,
+				DA82F5D92C608DAD0090F159 /* Builder.swift */,
+				DA82F5E32C608EFB0090F159 /* DataStoreService.swift */,
+				DA82F5EE2C6091120090F159 /* ImageTableViewCell.swift */,
+				DA82F5DE2C608E5E0090F159 /* NetworkLayer */,
+				DA82F5BF2C5CB2750090F159 /* GaleryManager */,
+				DA82F5DD2C608E340090F159 /* Icon */,
+				DA82F5C62C5CB2E10090F159 /* MainModule */,
+				DA82F5E52C608FAF0090F159 /* SecondModule */,
 				DA82F5722C5A101E0090F159 /* Assets.xcassets */,
 				DA82F5742C5A101E0090F159 /* LaunchScreen.storyboard */,
 				DA82F5772C5A101E0090F159 /* Info.plist */,
@@ -113,7 +150,8 @@
 		DA82F57F2C5A101F0090F159 /* iconfinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				DA82F5802C5A101F0090F159 /* iconfinderTests.swift */,
+				DA82F5802C5A101F0090F159 /* MainPresenterTests.swift */,
+				DA82F5EC2C60908E0090F159 /* SecondPresenterTests.swift */,
 			);
 			path = iconfinderTests;
 			sourceTree = "<group>";
@@ -122,9 +160,56 @@
 			isa = PBXGroup;
 			children = (
 				DA82F58A2C5A101F0090F159 /* iconfinderUITests.swift */,
-				DA82F58C2C5A101F0090F159 /* iconfinderUITestsLaunchTests.swift */,
 			);
 			path = iconfinderUITests;
+			sourceTree = "<group>";
+		};
+		DA82F5BF2C5CB2750090F159 /* GaleryManager */ = {
+			isa = PBXGroup;
+			children = (
+				DA82F5C02C5CB2950090F159 /* GalleryManager.swift */,
+				DA82F5C22C5CB2A60090F159 /* AlertAccessViewController.swift */,
+				DA82F5C42C5CB2B80090F159 /* AlertSaveSuccessViewController.swift */,
+			);
+			path = GaleryManager;
+			sourceTree = "<group>";
+		};
+		DA82F5C62C5CB2E10090F159 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				DA82F5C72C5CB2FE0090F159 /* MainView.swift */,
+				DA82F5CD2C5CB3FD0090F159 /* SearchViewController.swift */,
+				DA82F5C92C5CB3090090F159 /* MainPresenterProtocol.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		DA82F5DD2C608E340090F159 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				DA82F5BB2C5CB2320090F159 /* IconModel.swift */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		DA82F5DE2C608E5E0090F159 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DA82F5B92C5CB2070090F159 /* IconSearchService.swift */,
+				DA82F5BD2C5CB2520090F159 /* IconCacheManager.swift */,
+				DA82F5DB2C608E220090F159 /* ImageLoaderManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		DA82F5E52C608FAF0090F159 /* SecondModule */ = {
+			isa = PBXGroup;
+			children = (
+				DA82F5E62C608FD20090F159 /* SecondView.swift */,
+				DA82F5E82C608FE80090F159 /* SecondViewController.swift */,
+				DA82F5EA2C60900D0090F159 /* SecondPresenter.swift */,
+			);
+			path = SecondModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,10 +342,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA82F5BA2C5CB2070090F159 /* IconSearchService.swift in Sources */,
+				DA82F5E92C608FE80090F159 /* SecondViewController.swift in Sources */,
 				DA82F5712C5A101D0090F159 /* iconfinder.xcdatamodeld in Sources */,
-				DA82F56B2C5A101D0090F159 /* ViewController.swift in Sources */,
+				DA82F5E72C608FD20090F159 /* SecondView.swift in Sources */,
+				DA82F5CA2C5CB3090090F159 /* MainPresenterProtocol.swift in Sources */,
+				DA82F5C12C5CB2950090F159 /* GalleryManager.swift in Sources */,
+				DA82F5BC2C5CB2320090F159 /* IconModel.swift in Sources */,
+				DA82F5E42C608EFB0090F159 /* DataStoreService.swift in Sources */,
+				DA82F5EB2C60900D0090F159 /* SecondPresenter.swift in Sources */,
+				DA82F5BE2C5CB2520090F159 /* IconCacheManager.swift in Sources */,
 				DA82F5672C5A101D0090F159 /* AppDelegate.swift in Sources */,
+				DA82F5DA2C608DAD0090F159 /* Builder.swift in Sources */,
+				DA82F5DC2C608E220090F159 /* ImageLoaderManager.swift in Sources */,
+				DA82F5CE2C5CB3FD0090F159 /* SearchViewController.swift in Sources */,
+				DA82F5C32C5CB2A60090F159 /* AlertAccessViewController.swift in Sources */,
+				DA82F5C52C5CB2B80090F159 /* AlertSaveSuccessViewController.swift in Sources */,
 				DA82F5692C5A101D0090F159 /* SceneDelegate.swift in Sources */,
+				DA82F5C82C5CB2FE0090F159 /* MainView.swift in Sources */,
+				DA82F5EF2C6091120090F159 /* ImageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +368,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA82F5812C5A101F0090F159 /* iconfinderTests.swift in Sources */,
+				DA82F5812C5A101F0090F159 /* MainPresenterTests.swift in Sources */,
+				DA82F5ED2C60908E0090F159 /* SecondPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +378,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA82F58B2C5A101F0090F159 /* iconfinderUITests.swift in Sources */,
-				DA82F58D2C5A101F0090F159 /* iconfinderUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -417,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
